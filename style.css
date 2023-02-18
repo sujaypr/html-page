@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media(max-width:700px) {
+    .nav-links{
+        display: none;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: chocolate;
+        text-align: center;
+    }
+    #menu{
+        width: 40px;
+        height: 40px;
+        margin-left: 30%;
+        
+    }
+    #closemenu{
+        
+        width: 30px;
+        height: 30px;
+        padding: 10px 0px 0px 10px;
+        margin-left:150px ;
+    }
+    .pokerow{
+        flex-direction: column;
+    }
+    .pokecol{
+        margin-bottom: 20px;
+    }
+}
+@media(min-width:700px){
+    #menu{
+        display:none;
+    }
+    #closemenu{
+        display: none;
+    }
+}
+.header{
+    background-image:linear-gradient(rgba(4,4,10,0.5),rgba(4,4,10,0.5))
+    ,url(img/1\ \(10\).jpg); 
+    min-height:max-content;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 25px;
+}
+#name{
+    color: blueviolet;
+    font-family:fantasy;
+    font-style: italic;
+    font-size:xx-large;
+    margin-left: 0;
+    margin: 20px;
+}
+
+nav a,img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+nav{
+    display:flex;
+    padding:4% 6% ;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.nav-links{
+    margin-left: 40%;
+    
+}
+.nav-links ul li{
+    display: inline-block;
+    padding:5px 10px;
+    text-decoration:none;
+    margin: 25px;   
+}
+.nav-links ul li a{
+    text-decoration:none;
+    color: rgb(37, 201, 216);
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:chocolate;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.headcont {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color:gainsboro;
+    font-size:x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headcont h1{
+    color:chocolate;
+    font-size: xx-large;
+
+}
+.headcont span{
+    font-style: italic;
+    color:rgb(37, 201, 216);
+
+}
+#btn{
+    border: 1px solid white;
+    text-decoration: none;
+    color:chocolate;
+    padding: 10px;
+    border-radius: 5px;
+}
+#btn:hover{
+    background-color:blueviolet;
+    color:rgb(37, 201, 216);
+    border: none;
+    transition:1s;
+}
+
+.maincont{
+    width:60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.maincont h1{
+    color: chartreuse;
+    font-size:xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+}
+.maincont p{
+    color: cadetblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.pokerow{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;  
+}
+.pokecol{
+    flex-basis: 31%;
+    background-color: rgb(251, 219, 219);
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding:15px 10px;
+    transition: 0.5s;   
+}
+.pokecol h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+     'Lucida Sans', Arial, sans-serif ;
+     color: blueviolet;
+}
+.pokecol p{
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:dimgray;
+}
+.pokecol:hover{
+    box-shadow: 0px 0px 20px 0px rgb(87, 87, 87);
+}
+.beycol{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;    
+}
+.beycol:hover{
+    box-shadow: 0px 0px 20px 0px black;
+}
+.beycol img{
+    width: 100%;
+    height:100%;
+    display: block;
+    border-radius: 7px;
+}
+.beycol-cont{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -200;
+    left: 0;
+    transition:1s;
+}
+.beycol-cont h2{
+    color: chartreuse;
+}
+.beycol-cont p{
+    color:rgb(37, 201, 216);
+}
+.beycol:hover .beycol-cont,.beycol:active .beycol-cont{
+   top:0%;
+}
+
+.foot{
+    background-image: url(img/1\ \(9\).jpg);
+    margin-top: 20px;
+}
+.footer{
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding:20px;
+    width: 60%;
+}
+.footer img{
+    width:20px;
+    height:20px;
+    margin: 10px;  
+}
+.footer img:hover{
+    cursor: pointer;
+}
+.footer h2{
+    color: deepskyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+.footer p{
+    color: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+     'Lucida Sans', Arial, sans-serif;
+}
